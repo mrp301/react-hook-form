@@ -17,13 +17,13 @@
       "version": "detect"
     }
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "eslint-plugin-prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "prettier" // prettierrcの設定を参照している
+    "eslint-config-prettier"
   ],
   "rules": {
     "react/prop-types": "off",
