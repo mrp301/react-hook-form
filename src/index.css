@@ -74,3 +74,46 @@ select {
   color: red;
   font-weight: bold;
 }
+
+.radioList {
+  display: flex;
+  text-align: left;
+}
+
+.radioList > li {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: solid 1px rgb(216, 216, 216);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+tr {
+  padding: 0;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: solid 1px rgb(216, 216, 216);
+}
+
+table tr:last-child th,
+table tr:last-child td {
+  border: none;
+}
+
+th {
+  width: 140px;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+td {
+  text-align: left;
+}

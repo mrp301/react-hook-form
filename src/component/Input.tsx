@@ -1,10 +1,9 @@
 import React, { forwardRef } from "react";
-import { FormType } from "../App";
 
 type Props = {
-  name: keyof FormType;
+  type: "number" | "text";
   label: string;
-} & JSX.IntrinsicElements["input"];
+} & Omit<JSX.IntrinsicElements["input"], "type">;
 
 /* eslint-disable react/display-name */
 export const Input = forwardRef<HTMLInputElement, Props>(
