@@ -10,12 +10,14 @@ export const Confirm: VFC = () => {
     <main>
       <h2>Confirm</h2>
       <table>
-        {keys.map((key) => (
-          <tr key={key}>
-            <th>{key}</th>
-            <td>{values[key]}</td>
-          </tr>
-        ))}
+        <tbody>
+          {keys.map((key) => (
+            <tr key={key}>
+              <th>{key}</th>
+              <td>{values[key]}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </main>
   );
